@@ -1,0 +1,43 @@
+!DOCTYPE html>
+<html lang="pl-PL">
+ <textarea rows=25 cols=90>
+<html>
+ <head>
+  <title> Litterski </title>
+  <script language="JavaScript">
+   function lit_start()
+   {
+    start_lit = new Date();
+    poczatek_lit=stat_lit.getTime()
+   }
+   function wit_stop()
+   {
+    stop_lit = new Date();
+    koniec_lit=stop_lit.getTime()
+    roznica_lit=koniec_lit-poczatek_lit
+    pokaz1.innerHTML=roznica_lit/1000+"s";
+   }
+  </script>
+  <style>
+  </style>
+  </head>
+  <body>
+   <script language="JavaScript">
+    dzis_lit=new Date();
+    document.write("Aktualny czas: ",dzis_lit.getHours(),":",dzis_lit.getMinutes());
+    </script>
+   <form>
+<input type="button" name="Button1" value="START stoper" onclick="lit_start()">
+<input type="button" name="Button1" value="STOP stoper" onclick="lit_stop()">
+<br>
+<table border="4px">
+    <br>
+ <tr id="pokaz1"></tr>
+</table>
+</form>
+</body> 
+</html>
+   </div>
+</body>
+ </textarea>
+</html>
